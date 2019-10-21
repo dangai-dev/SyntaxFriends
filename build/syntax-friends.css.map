@@ -1,0 +1,1 @@
+{"version":3,"sources":["syntax-friends.scss"],"names":[],"mappings":"AAEA;EACI,eAAe;EACf,gBAAgB;EAChB,YAAY,EAAA","file":"syntax-friends.css","sourcesContent":["@import '_variaveis';\r\n\r\n.landing-page {\r\n    background: red;\r\n    min-height: 100%;\r\n    color: white;\r\n}"]}
