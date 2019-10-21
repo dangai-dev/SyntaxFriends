@@ -25,10 +25,10 @@ const files = {
 // Sass task: compiles the *.scss files into *.css
 function scssTask(){
     return src(files.scssPath)
-        // .pipe(sourcemaps.init()) // initialize sourcemaps first
+        .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass()) // compile SCSS to CSS
-        // .pipe(postcss([ autoprefixer() ])) // PostCSS plugins
-        // .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        .pipe(postcss([ autoprefixer() ])) // PostCSS plugins
+        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(dest('build')) // put final CSS in build folder
         .pipe(browserSync.stream());
 }
