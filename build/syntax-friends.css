@@ -1,2 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600|Open+Sans:400,600,700&display=swap");
+.btn {
+  text-transform: uppercase;
+  letter-spacing: .05ch; }
+  .btn-light {
+    color: #4B0C83; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h2 {
+  color: #212121;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 2rem; }
+  h2:before {
+    content: '<'; }
+  h2:after {
+    content: '>'; }
+  h2:before, h2:after {
+    font-weight: 600;
+    font-size: 90%; }
+
 .landing-page {
   min-height: 100%; }
+  .landing-page .bg-img {
+    background: url("../img/background.png") top right no-repeat;
+    background-size: auto 100%;
+    height: 100vh;
+    padding: 0;
+    position: relative; }
+    .landing-page .bg-img .navbar {
+      padding: 2.5rem 0 1rem; }
+    .landing-page .bg-img .nav-item {
+      font-size: .875rem;
+      font-weight: 600;
+      letter-spacing: .05ch;
+      padding: 0 .75rem;
+      text-transform: uppercase; }
+    .landing-page .bg-img .jumbotron {
+      align-items: center;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      padding: 25vh 0; }
+  .landing-page .vantagens {
+    padding: 3rem 1rem; }
+    .landing-page .vantagens .card-body {
+      flex-direction: column;
+      display: flex;
+      align-items: center; }
+    .landing-page .vantagens .card-img {
+      width: 60px;
+      height: 60px;
+      background-color: #EFE9FD;
+      padding: 1rem;
+      border-radius: 50rem;
+      text-align: center;
+      margin-bottom: 1.5rem; }
+      .landing-page .vantagens .card-img .img-fluid {
+        max-height: 26px; }
+    .landing-page .vantagens .card-title {
+      color: #212121;
+      font-size: .875rem;
+      letter-spacing: .05ch;
+      font-weight: 600;
+      text-align: center; }
+    .landing-page .vantagens .card-text {
+      color: #9FA3A7;
+      font-size: .9rem;
+      text-align: center;
+      padding: .5rem 1rem; }
+  .landing-page .experimente {
+    color: #fff;
+    background-image: linear-gradient(130deg, #A452FF 0%, #4B0C83 100%);
+    text-align: center;
+    padding: 5rem 1rem; }
+    .landing-page .experimente h2 {
+      color: #fff; }
+    .landing-page .experimente p {
+      margin-bottom: 2rem;
+      font-size: .9rem; }
+  .landing-page footer {
+    background-color: #F3F3F3; }
+    .landing-page footer .copyright {
+      color: #9FA3A7;
+      padding: 1rem;
+      font-size: .75rem;
+      text-align: center; }
+
+/*# sourceMappingURL=syntax-friends.css.map */

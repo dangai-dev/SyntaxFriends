@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600|Open+Sans:400,600,700&display=swap');
+
+// Colors
+$primary-color: #A452FF;
+$secondary-color: #4B0C83;
+$gray-base: #9FA3A7;
+$gray-dark: #212121;
+
+$font-family-body: 'Open Sans', sans-serif;
+$font-family-title: 'Barlow Condensed', sans-serif;
 $font-style: normal; 
 $font-variant: normal; 
 $font-weight: normal; 
-$font-color: #222; 
+$font-color: $gray-base; 
+$font-color-dark: $gray-dark;
 $font-size: 1rem; 
 $line-height: 1.5; 
-$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: .05ch;
+
+    &-light {
+        color: $secondary-color;
+    }
+}
