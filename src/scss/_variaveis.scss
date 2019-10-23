@@ -3,6 +3,7 @@
 // Colors
 $primary-color: #A452FF;
 $secondary-color: #4B0C83;
+$gray-light: #F3F3F3;
 $gray-base: #9FA3A7;
 $gray-dark: #212121;
 
@@ -15,6 +16,8 @@ $font-color: $gray-base;
 $font-color-dark: $gray-dark;
 $font-size: 1rem; 
 $line-height: 1.5; 
+
+$box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 
 .btn {
     text-transform: uppercase;

@@ -5,6 +5,9 @@
   .btn-light {
     color: #4B0C83; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
@@ -79,12 +82,94 @@ h2 {
     .landing-page .experimente p {
       margin-bottom: 2rem;
       font-size: .9rem; }
-  .landing-page footer {
-    background-color: #F3F3F3; }
-    .landing-page footer .copyright {
+
+.login-page,
+.cadastro-page {
+  background-color: #F3F3F3;
+  min-height: 100vh; }
+  .login-page .form-box,
+  .cadastro-page .form-box {
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 6rem 0 0;
+    position: relative;
+    min-height: 65vh;
+    padding: 4rem 1rem 1rem;
+    font-size: .9rem; }
+    .login-page .form-box .sf-logo,
+    .cadastro-page .form-box .sf-logo {
+      position: absolute;
+      max-width: 190px;
+      top: -3rem;
+      left: 50%;
+      transform: translateX(-50%); }
+    .login-page .form-box form,
+    .cadastro-page .form-box form {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem; }
+      .login-page .form-box form h6,
+      .cadastro-page .form-box form h6 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 1.5rem; }
+        .login-page .form-box form h6 b,
+        .cadastro-page .form-box form h6 b {
+          color: #A452FF; }
+      .login-page .form-box form .btn[type="submit"],
+      .cadastro-page .form-box form .btn[type="submit"] {
+        margin: auto; }
+    .login-page .form-box .step-dots,
+    .cadastro-page .form-box .step-dots {
+      display: flex;
+      justify-content: center; }
+      .login-page .form-box .step-dots .dot,
+      .cadastro-page .form-box .step-dots .dot {
+        background-color: #D8D8D8;
+        border-radius: 5rem;
+        width: 8px;
+        height: 8px;
+        margin: 1.5rem .2rem 1rem; }
+        .login-page .form-box .step-dots .dot.active,
+        .cadastro-page .form-box .step-dots .dot.active {
+          width: 24px; }
+    .login-page .form-box .check-circle,
+    .cadastro-page .form-box .check-circle {
+      width: 60px;
+      color: #7ED321;
+      margin: 1.5rem 0; }
+  .login-page .form-group,
+  .cadastro-page .form-group {
+    margin-bottom: 1.5rem; }
+    .login-page .form-group label,
+    .cadastro-page .form-group label {
       color: #9FA3A7;
-      padding: 1rem;
-      font-size: .75rem;
-      text-align: center; }
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .1ch;
+      margin: 0;
+      text-transform: uppercase; }
+  .login-page .form-control,
+  .cadastro-page .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9FA3A7;
+    padding: .25rem; }
+    .login-page .form-control:active, .login-page .form-control:focus,
+    .cadastro-page .form-control:active,
+    .cadastro-page .form-control:focus {
+      outline: 0;
+      box-shadow: none;
+      border-bottom-color: #A452FF; }
+
+.landing-page footer {
+  background-color: #F3F3F3; }
+
+footer .copyright {
+  color: #9FA3A7;
+  padding: 1rem;
+  font-size: .75rem;
+  text-align: center; }
 
 /*# sourceMappingURL=syntax-friends.css.map */

@@ -1,5 +1,9 @@
 @import '_variaveis';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-family-body;
 }
@@ -102,14 +106,109 @@ h2 {
             font-size: .9rem;
         }
     }
+}
 
-    footer {
-        background-color: #F3F3F3;
-        .copyright {
-            color: $font-color;
-            padding: 1rem;
-            font-size: .75rem;
-            text-align: center;
+.login-page,
+.cadastro-page {
+    background-color: $gray-light;
+    min-height: 100vh;
+
+    .form {
+        &-box {
+            background: #fff;
+            box-shadow: $box-shadow;
+            border-radius: 10px;
+            margin: 6rem 0 0;
+            position: relative;
+            min-height: 65vh;
+            padding: 4rem 1rem 1rem;
+            font-size: .9rem;
+    
+            .sf-logo {
+                position: absolute;
+                max-width: 190px;
+                top: -3rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+    
+                h6 {
+                    text-align: center;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                    b { color: $primary-color }
+                }
+
+                .btn[type="submit"] {
+                    margin: auto;
+                }
+
+            }
+
+            .step-dots {
+                display: flex;
+                justify-content: center;
+                .dot {
+                    background-color: #D8D8D8;
+                    border-radius: 5rem;
+                    width: 8px;
+                    height: 8px;
+                    margin: 1.5rem .2rem 1rem;
+
+                    &.active {
+                        width: 24px;
+                        }
+                }
+            }
+
+            .check-circle {
+                width: 60px;
+                color: #7ED321;
+                margin: 1.5rem 0;
+            }
         }
+
+        &-group {
+            margin-bottom: 1.5rem;
+            
+            label {
+                color: $gray-base;
+                font-size: .7rem;
+                font-weight: 600;
+                letter-spacing: .1ch;
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+
+
+        &-control {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $gray-base;
+            padding: .25rem;
+
+            &:active,
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border-bottom-color: $primary-color;
+            }
+        }
+    }
+}
+
+footer {
+    .landing-page & { background-color: $gray-light }
+    .copyright {
+        color: $font-color;
+        padding: 1rem;
+        font-size: .75rem;
+        text-align: center;
     }
 }
