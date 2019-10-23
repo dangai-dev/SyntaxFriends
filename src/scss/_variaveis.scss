@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600|Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600|Open+Sans:400,600,700|Fira+Code|Material+Icons&display=swap');
 
 // Colors
 $primary-color: #A452FF;
 $secondary-color: #4B0C83;
+$details-color: #8530E4;
 $gray-light: #F3F3F3;
 $gray-base: #9FA3A7;
 $gray-dark: #212121;
 
 $font-family-body: 'Open Sans', sans-serif;
 $font-family-title: 'Barlow Condensed', sans-serif;
+$font-family-mono: 'Fira Code', sans-serif;
 $font-style: normal; 
 $font-variant: normal; 
 $font-weight: normal; 
